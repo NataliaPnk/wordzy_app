@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0 0;
+}
+
+.wrapper > form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  max-width: 45rem;
+  min-height: 2.5rem;
+  border: none;
+}
+
+.wrapper > form > button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  max-width: 20rem;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 0.1rem #444444;
+  border-radius: 1rem;
+  box-shadow: rgba(46, 75, 240, 0.4) 5px 5px, rgba(53, 46, 240, 0.3) 10px 10px,
+    rgba(59, 46, 240, 0.2) 15px 15px, rgba(46, 53, 240, 0.1) 20px 20px,
+    rgba(82, 46, 240, 0.05) 25px 25px;
+}
+
+.wrapper > form > button:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+
+.wrapper > form > input {
+  border: none;
+  margin-left: 1rem;
+  padding: 1rem;
+  max-width: 25rem;
+  min-height: 2rem;
+
+  border: solid 0.1rem #c6bcbc;
+  border-radius: 1rem;
+}
+
+.wrapper > form > input:hover {
+  box-shadow: rgba(20, 88, 139, 0.3) 0px 1px 2px 0px,
+    rgba(12, 92, 152, 0.15) 0px 1px 3px 1px;
+  border-color: #4db8dc;
+  border: double;
+  background-color: #faf3e0;
+}
