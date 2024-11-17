@@ -47,7 +47,9 @@ export default function WordItem({
   function handleDelete(e) {
     e.stopPropagation();
 
-    dispatch(deleteWordAction(id));
+    if (window.confirm("Are you sure you want to delete this word?")) {
+      dispatch(deleteWordAction(id));
+    }
   }
 
   return (
@@ -80,7 +82,7 @@ export default function WordItem({
         />
       </div>
       <p style={levelStyle}>{level}</p>
-      <RxCross2 onClick={handleDelete} />
+      <RxCross2 onClick={(e) => handleDelete(e)} />
     </motion.div>
   );
 }
