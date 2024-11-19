@@ -16,7 +16,7 @@ export default function AddWordForm() {
       id: Date.now(),
       word_eng: word_eng.value,
       word_de: word_de.value,
-      status: "false",
+      status: "false"
     };
 
     dispatch(addWordAction(newWord));

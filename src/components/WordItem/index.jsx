@@ -81,7 +81,9 @@ export default function WordItem({
           onClick={() => dispatch(changeStatusAction(id))}
         />
       </div>
-      <p style={levelStyle}>{level}</p>
+      {level && typeof level === "string" && level.trim() && (
+        <p style={levelStyle}>{level}</p>
+      )}
       <RxCross2 onClick={(e) => handleDelete(e)} />
     </motion.div>
   );
