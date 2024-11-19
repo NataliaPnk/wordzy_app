@@ -1,5 +1,5 @@
 .header {
-  background-color: #3F51B5;
+  background-color: #3f51b5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,7 +8,8 @@
   position: fixed;
   z-index: 1;
   width: 100%;
-  box-shadow: rgba(55, 77, 205, 0.12) 0px 2px 4px 0px, rgba(45, 56, 198, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(55, 77, 205, 0.12) 0px 2px 4px 0px,
+    rgba(45, 56, 198, 0.32) 0px 2px 16px 0px;
 }
 
 .header h2 {
@@ -35,5 +36,5 @@
 }
 
 .header > nav > a:hover {
-  color: #FFC45C;
+  color: #ffc45c;
 }

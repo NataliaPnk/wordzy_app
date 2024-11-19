@@ -12,7 +12,7 @@ export default function Header() {
 
       <nav>
         <Link to="/">My Words</Link>
-        <Link to="/learn">Learn</Link>
+        <Link to="/levels">Learn</Link>
         <Link to="/articles">Articles</Link>
         <Link to="/sign_ap">Sign Up</Link>
       </nav>

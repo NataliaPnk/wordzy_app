@@ -554,4 +554,20 @@ export const wordsData = [
     status: "false",
     level: "intermediate",
   },
+  {
+    id: 71,
+    word_eng: "Cup",
+    word_de: "Tasse",
+    lang: "eng",
+    status: "false",
+    level: "Advanced",
+  },
+  {
+    id: 72,
+    word_eng: "Cat",
+    word_de: "Katze",
+    lang: "eng",
+    status: "false",
+    level: "Advanced",
+  },
 ];

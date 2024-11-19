@@ -24,7 +24,7 @@ export const wordsReducer = (state = wordsData, action) => {
     return state.filter((el) => el.id !== action.payload);
   }
   if (action.type === ADD_WORD) {
-    return [...state, action.payload];
+    return [action.payload, ...state];
   } else if (action.type === CHANGE_STATUS) {
     const target = state.find((el) => el.id === action.payload);
     target.status = target.status === "false" ? "true" : "false";
