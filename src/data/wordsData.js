@@ -570,4 +570,4 @@ export const wordsData = [
     status: "false",
     level: "Advanced",
   },
-];
+]

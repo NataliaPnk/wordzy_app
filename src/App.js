@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MyWordsPage />} />
-        <Route path="/levels/:level" element={<WordsByLevelPage />} />
+        <Route path="/words/:level_name" element={<WordsByLevelPage />} />
         <Route path="/levels" element={<LearnPage />} />
         <Route path="/articles" element={<ArticlesPage />} />
         <Route path="/sign_up" element={<SignUpPage />} />

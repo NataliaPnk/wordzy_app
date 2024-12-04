@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import s from "../LevelCard/index.module.css";
 
-export default function LevelCard({ level }) {
+export default function LevelCard({ level_name }) {
   return (
-    <Link to={`/levels/${level}`}>
-      <div className={s.card}>{level}</div>
+    <Link to={`/words/${level_name}`}>
+      <div>{level_name.toUpperCase()}</div>
     </Link>
   );
 }
