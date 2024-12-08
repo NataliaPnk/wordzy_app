@@ -2,8 +2,9 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLangAction } from "../../store/reducers/wordsByLevelReducer";
 import s from "../WordByLevelItem/index.module.css";
+import ProgressStatus from "../ProgressStatus";
 
-export default function WordByLevelItem({ id, style }) {
+export default function WordByLevelItem({ id }) {
   const dispatch = useDispatch();
 
   const word = useSelector((state) =>
@@ -19,6 +20,7 @@ export default function WordByLevelItem({ id, style }) {
   return (
     <div onClick={handleClick} className={s.item}>
       <p>{displayWord}</p>
+      <ProgressStatus type="wordByLevel" id={id} />
     </div>
   );
 }

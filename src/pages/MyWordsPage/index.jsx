@@ -9,7 +9,7 @@ export default function MyWordsPage() {
   return (
     <div>
       <AddWordForm />
-      <WordsContainer words={wordsState} />
+      <WordsContainer words={wordsState} progressStyle={true} />
     </div>
   );
 }

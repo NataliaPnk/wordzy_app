@@ -7,7 +7,7 @@ export default function WordsByLevelPage() {
 
   return (
     <div className={s.wrapper}>
-      <WordsByLevelContainer />
+      <WordsByLevelContainer progressStyle={true} />
     </div>
   );
 }

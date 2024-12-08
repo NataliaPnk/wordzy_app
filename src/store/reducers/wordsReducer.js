@@ -11,7 +11,7 @@ export const deleteWordAction = (word_id) => ({
 
 export const addWordAction = (new_word) => ({
   type: ADD_WORD,
-  payload: new_word
+  payload: new_word,
 });
 
 export const changeStatusAction = (word_id) => ({
