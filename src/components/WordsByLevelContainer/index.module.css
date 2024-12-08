@@ -1,6 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat( 4, 1fr);
-  gap: 1.5rem;
-  padding: 5rem 12rem;
+  padding: 5rem 0;
+  position: relative;
+  width: 40%; /* Full width of parent */
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Initial width */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttons > button {
+  width: 4rem;
+  padding: 0.2rem 0;
 }

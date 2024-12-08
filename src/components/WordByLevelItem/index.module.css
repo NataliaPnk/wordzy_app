@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
+  padding: 4rem 2rem;
   background-color: #f2f2f2;
+  height: 200px;
+  font-size: 28px;
 
-  box-shadow: rgba(46, 75, 240, 0.4) 5px 5px, rgba(53, 46, 240, 0.3) 10px 10px,
-    rgba(59, 46, 240, 0.2) 15px 15px, rgba(46, 53, 240, 0.1) 20px 20px,
-    rgba(82, 46, 240, 0.05) 25px 25px;
+  box-shadow: rgba(3, 86, 230, 0.25) 0px 4px 8px -2px,
+  rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+  flex: 0 0 100%; /*Each card takes 100% width of the container*/
 }

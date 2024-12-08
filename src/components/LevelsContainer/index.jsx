@@ -9,7 +9,7 @@ export default function LevelsContainer() {
   const uniqueLevels = [...new Set(levelsState.map((el) => el.level))];
 
   return (
-    <div className={s.container}>
+    <div className={s.container} >
       {uniqueLevels.map((el) => (
         <LevelCard key={el} level_name={el} />
       ))}
