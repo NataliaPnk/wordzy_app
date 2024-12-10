@@ -3,6 +3,7 @@ import { IoMdCheckbox } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStatusAction as changeWordStatusAction } from "../../store/reducers/wordsReducer";
 import { changeStatusAction as changeWordByLevelStatusAction } from "../../store/reducers/wordsByLevelReducer";
+import { motion } from "motion/react";
 
 export default function ProgressStatus({ id, type }) {
   const dispatch = useDispatch();
@@ -36,9 +37,13 @@ export default function ProgressStatus({ id, type }) {
   };
 
   return (
-    <div>
+    <motion.div
+      style={{ display: "flex", alignContent: "center", gap: "0.2rem" }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 1.0 }}
+    >
       <span style={statusStyle}>{progress}</span>
       <IoMdCheckbox style={checkStyle} onClick={handleClick} />
-    </div>
+    </motion.div>
   );
 }

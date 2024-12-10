@@ -21,4 +21,15 @@
 .buttons > button {
   width: 4rem;
   padding: 0.2rem 0;
+  background-color: #ffc45c;
+  color: #343f7d;
+  font-size: 600;
+
+  border-radius: 0.4rem;
+  border: solid 0.1rem #888888;
+}
+
+.buttons > button:hover {
+  background-color: #f0a524;
+  color: #192045;
 }

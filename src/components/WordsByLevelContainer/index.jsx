@@ -3,6 +3,7 @@ import WordByLevelItem from "../WordByLevelItem";
 import { useParams } from "react-router-dom";
 import { wordsData } from "../../data/wordsData";
 import s from "./index.module.css";
+import { motion } from "motion/react";
 
 export default function WordsByLevelContainer() {
   const [wordsByLevel, setWordsByLevel] = useState([]);
@@ -45,8 +46,20 @@ export default function WordsByLevelContainer() {
       </div>
 
       <div className={s.buttons}>
-        <button onClick={goLeft}>previous</button>
-        <button onClick={goRight}>next</button>
+        <motion.button
+          onClick={goLeft}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 1.0 }}
+        >
+          previous
+        </motion.button>
+        <motion.button
+          onClick={goRight}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 1.0 }}
+        >
+          next
+        </motion.button>
       </div>
     </div>
   );
