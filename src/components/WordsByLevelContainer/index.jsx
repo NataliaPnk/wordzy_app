@@ -11,7 +11,10 @@ export default function WordsByLevelContainer() {
   const { level_name } = useParams();
 
   useEffect(() => {
-    const filteredWords = wordsData.filter((el) => el.level === level_name);
+    const filteredWords = wordsData
+      .filter((el) => el.level === level_name)
+      .slice()
+      .sort(() => Math.random() - 0.5);
     setWordsByLevel(filteredWords);
     setCurrentIndex(0); // Reset index when level changes
   }, [level_name]);

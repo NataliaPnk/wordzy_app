@@ -4,7 +4,6 @@ import s from "../WordItem/index.module.css";
 import { useDispatch } from "react-redux";
 import { deleteWordAction } from "../../store/reducers/wordsReducer";
 import { motion } from "motion/react";
-import ProgressStatus from "../ProgressStatus";
 
 export default function WordItem({
   id,
@@ -12,9 +11,21 @@ export default function WordItem({
   word_de = "",
   level = "",
 }) {
+  const levelBackgroundColors = {
+    beginner: "#85EAF6",
+    intermediate: "#6FCF97",
+    advanced: "#FFC45C",
+  };
+
+  const levelColors = {
+    beginner: "#333333",
+    intermediate: "#F2F2F2",
+    advanced: "333333",
+  };
+
   const levelStyle = {
-    color: level === "beginner" ? "#333333" : "#F2F2F2",
-    backgroundColor: level === "beginner" ? "#85EAF6" : "#6FCF97",
+    color: levelColors[level],
+    backgroundColor: levelBackgroundColors[level],
     boxShadow: "rgba(153, 167, 228, 0.56) 0px 12px 70px 4px",
     borderRadius: "0.5rem",
     padding: "0.2rem 0.4rem",
@@ -45,9 +56,7 @@ export default function WordItem({
           {word_de.toUpperCase()}
         </p>
       </div>
-      <div>
-        <ProgressStatus type="word" id={id} />
-      </div>
+      <div></div>
       {level && typeof level === "string" && level.trim() && (
         <p style={levelStyle}>{level}</p>
       )}

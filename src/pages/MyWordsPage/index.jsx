@@ -1,12 +1,9 @@
 import React from "react";
 import WordsContainer from "../../components/WordsContainer";
 import AddWordForm from "../../components/AddWordForm";
-import { useSelector } from "react-redux";
 import { motion } from "motion/react";
 
 export default function MyWordsPage() {
-  const wordsState = useSelector((store) => store.words);
-
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -23,7 +20,7 @@ export default function MyWordsPage() {
       variants={containerVariants}
     >
       <AddWordForm />
-      <WordsContainer words={wordsState} progressStyle={true} />
+      <WordsContainer />
     </motion.div>
   );
 }

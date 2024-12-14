@@ -3,7 +3,6 @@ import { wordsData } from "../../data/wordsData";
 const CHANGE_LANG = "CHANGE_LANG";
 const CHANGE_STATUS = "CHANGE_STATUS";
 
-
 export const changeLangAction = (word_id) => ({
   type: CHANGE_LANG,
   payload: word_id,
@@ -13,7 +12,6 @@ export const changeStatusAction = (word_id) => ({
   type: CHANGE_STATUS,
   payload: word_id,
 });
-
 
 export const wordsByLevelReducer = (state = wordsData, action) => {
   if (action.type === CHANGE_LANG) {

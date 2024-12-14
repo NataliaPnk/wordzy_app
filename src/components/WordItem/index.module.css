@@ -57,23 +57,7 @@
 
 .item > p {
   position: absolute;
-  right: 12.5rem;
+  right: 6rem;
   padding: 0.5rem;
 }
 
-.item > p > span {
-  color: blue;
-}
-
-.item > div:last-of-type {
-  position: absolute;
-  right: 3rem;
-  display: flex;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-.item > div > span {
-  border-radius: 1rem;
-  padding: 0.2rem 0.8rem;
-}
