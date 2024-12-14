@@ -1,0 +1,87 @@
+.wrapperForm {
+  padding: 10rem 16rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapperForm > h2 {
+  padding-bottom: 2rem;
+  font-size: 36px;
+  color: #ff6e6e;
+  font-weight: 700;
+  text-shadow: rgba(13, 13, 13, 0.19) 0px 10px 20px;
+}
+
+.wrapperForm > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  border: none;
+  border-radius: 1rem;
+  padding: 3rem 6rem;
+  box-shadow: rgba(15, 28, 83, 0.4) 0px 30px 90px;
+}
+
+.wrapperForm > form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 12px;
+  color: #c20505;
+}
+
+.wrapperForm > form > div > input {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #888888;
+  transition: transform 0.3s ease;
+}
+
+.wrapperForm > form > div > input:hover {
+  box-shadow: rgba(11, 11, 157, 0.1) 0px 4px 16px,
+    rgba(12, 12, 162, 0.05) 0px 8px 32px;
+  transform: scale(1.07);
+  border: solid 0.1rem #3f51b5;
+}
+
+.wrapperForm > form > div:last-of-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.wrapperForm > form > div:last-of-type > button {
+  cursor: pointer;
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #ffc45c;
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.wrapperForm > form > div:last-of-type > p {
+  color: #333333;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 12px;
+}
+
+.wrapperForm > form > div:last-of-type > p > a {
+  color: #3f51b5;
+}
+
+.wrapperForm > form > div:last-of-type > p > a:hover {
+  color: #062af5;
+}

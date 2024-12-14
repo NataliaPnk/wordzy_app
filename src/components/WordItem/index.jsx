@@ -20,7 +20,7 @@ export default function WordItem({
   const levelColors = {
     beginner: "#333333",
     intermediate: "#F2F2F2",
-    advanced: "333333",
+    advanced: "#333333",
   };
 
   const levelStyle = {
